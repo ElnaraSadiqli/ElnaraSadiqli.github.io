@@ -1,0 +1,62 @@
+//---------------Color adjust-------------------//
+$color-dark-green : rgba(0, 128, 128, 1);
+$color-light-grey : #E5E5E5;
+$color-dark-grey: rgba(92, 92, 92, 1);
+$color-wht: rgba(255, 255, 255, 1);
+$color-somon: rgba(196, 226, 226, 1);
+
+
+
+
+//----------------Letter Size adjust--------------//
+
+// Font size-18px; height-21px; weight-200;
+.card-user-txt-size {
+    font: normal 300 1.3rem/1.31rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-28px; height-33px; weight-400;
+.card-user-tt-size {
+    font: normal 400 1.75rem/2.06rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-21px; height-45.5px; weight-200;
+.card-plant-txt-size {
+    font: normal 300 1.5rem/2.84rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-45px; height-52.88px; weight-300;
+.card-plant-tt-size {
+    font: normal 300 2.81rem/3.3rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-16px; height-23.5px; weight-400;
+.card-plant-txt-size-sm {
+    font: normal 300 1.2rem/1.47rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-35px; height-41.13px; weight-300;
+.card-plant-tt-size-sm {
+    font: normal 300 2.19rem/2.57rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-40px; height-47px; weight-400;
+.page-section-titles {
+    font: normal 400  2.8rem/2.94rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-100px; height-162.1px; weight-600;
+.page-big-titles {
+    font: normal 600  7rem/10.13rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-28px,height-33px ; weight-300;
+.page-txt-size {
+    font: normal 300  1.9rem/2.06rem 'Yanone Kaffeesatz', sans-serif;
+}
+
+// Font size-18pxx; height-23px; weight-400;
+.btn-txt-size {
+    font: normal 400 1.3rem/1.44rem 'Yanone Kaffeesatz', sans-serif;
+
+}

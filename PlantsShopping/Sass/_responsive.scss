@@ -1,0 +1,213 @@
+/*  for Resposive  */
+@media only screen and (max-width: 992px) {
+
+  // Header for Mobile
+  #header {
+
+    // Header Navbar Menu
+    #header-navbar {
+      padding: 2px 5px;
+    }
+
+    // Header Main
+    #header-main {
+
+      // Header Main Content Buttons
+      button {
+        margin-top: 1rem;
+      }
+
+      // Header main image
+      .header-main-image {
+        margin-top: 2rem;
+      }
+
+    }
+  }
+
+  // Assortments section  for Resposive
+  #assortments {
+
+    // Assortsments section item cards
+    .assortments-item-card {
+      border-radius: 1rem;
+      margin-top: 1.2rem;
+    }
+
+  }
+
+  // PlantSlider section  for Resposive
+  #plantSlider {
+
+
+    .slick-prev {
+      left: -10px;
+    }
+
+    .slick-next {
+      right: -10px;
+    }
+  }
+
+  // Important sectionfor  for Resposive
+  #important {
+
+    // Important section images
+    .important-images {
+      img {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  // User sectionfor  for Resposive
+  #users {
+    padding: 2rem;
+
+    // User section card
+    .user-card {
+      margin-top: 3rem;
+      margin-right: unset;
+    }
+  }
+
+  // Footer section  for Resposive
+  #footer {
+
+    // Footer section link top
+    .footer-top {
+
+      // Footer  section  links title (Quick Links) 
+      .footer-top-links-tt {
+        margin-top: 2rem;
+      }
+
+      // Footer Top  links second
+      .footer-top-links-s {
+        position: relative;
+        bottom: 3.5rem;
+      }
+
+      // Footer section form input
+      div:nth-last-child(1) {
+        display: flex;
+        justify-content: flex-start !important;
+      }
+
+    }
+
+  }
+}
+
+
+/* Small devices ( phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+
+  // Font size for Small devices
+  * {
+    font-size: 10px;
+  }
+
+  // Assortments Section for Mobile
+  #assortments {
+
+    // Assortments second cards image
+    .assortments-right-first-card {
+      img {
+        margin-right: 2rem;
+      }
+    }
+
+  }
+
+
+  // Green Image section for Mobile
+  #green-image {
+
+     // Green Image section background image and font size
+    .green-image-content {
+      background: url(../Images/Feelgreen/feelgreen-image-mobile.jpg) no-repeat center;
+      height: 39.125rem;
+      width: 100%;
+      object-fit: cover;
+
+      // Green Image section  font size for Mobile
+      .green-image-tt {
+        font-size: 4rem;
+      }
+
+
+    }
+  }
+
+
+  // Footer section  for Mobile
+  #footer {
+
+    // Fotter section bottom
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+
+// /* Medium devices (portrait tablets ,planset, 601px  up  up and till 767px) */
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+
+  // Font size for   Medium devices
+  * {
+    font-size: 12px;
+  }
+
+  // Footer section  for Medium devices
+  #footer {
+
+    // Footer bottom
+    .footer-bottom {
+      div {
+        padding-left: 2rem;
+      }
+
+    }
+  }
+
+}
+
+
+// /* Laptop devices (laptops 768px up  up and till 992px)
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  * {
+    font-size: 14px;
+  }
+
+  #header {
+    padding-top: 1rem;
+
+  }
+
+
+}
+
+// Large devices (993px  up and till 1199px)
+@media only screen and (max-width: 1199px) and (min-width: 993px) {
+
+
+  * {
+    font-size: 14px;
+  }
+
+  #header {
+
+    button {
+      display: flex;
+      margin-top: 1rem;
+    }
+  }
+}

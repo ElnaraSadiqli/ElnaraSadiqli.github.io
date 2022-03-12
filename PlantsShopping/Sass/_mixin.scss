@@ -1,0 +1,20 @@
+@import 'variables';
+
+@mixin button {
+
+    padding: 15px calc(3rem + 22px);
+    border: 1px solid $color-wht;
+    border-radius: 70px;
+    @extend .btn-txt-size;
+
+    a {
+        @extend .btn-txt-size;
+    }
+}
+
+@mixin card-button {
+    color: $color-dark-grey;
+    border: 1px solid $color-dark-grey;
+    border-radius: 70px;
+    padding: 0.689rem 2rem;
+}

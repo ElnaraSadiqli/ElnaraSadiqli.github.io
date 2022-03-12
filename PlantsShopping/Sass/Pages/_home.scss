@@ -1,0 +1,590 @@
+//..........................Header............//
+#header {
+    background-color: $color-dark-green;
+
+    // <!-- Header Navigation bar of Header  -->
+    #header-navbar {
+        padding: 1.31rem 0px 1.38rem 0px;
+        margin-bottom: 2px solid;
+
+        // Logo Of Header
+        .header-navbar-logo {
+            object-fit: contain;
+        }
+
+        //  Navigation Menu of Header 
+        .header-navbar-menu {
+            justify-content: flex-end;
+
+            // Navigation menu items of Header
+            li {
+                margin-right: 2.875rem;
+
+                a {
+                    font: normal 600 1.38rem/1.56rem'Yanone Kaffeesatz', sans-serif;
+                }
+            }
+        }
+    }
+
+    // Main Section of Header
+    #header-main {
+        color: $color-wht;
+        padding-top: 3rem;
+
+        //Header Main Section Content of Header
+        .header-main-content {
+
+            // Header Main Section  Content Mini title of Header
+            .header-main-content-mini-tt {
+                text-transform: uppercase;
+                font: normal 800 1.56rem/1.25rem 'Public Sans', sans-serif;
+                position: absolute;
+                top: 0.5rem;
+            }
+
+            //Header Main Section  Content Title of Header
+            .header-main-content-tt {
+                @extend .page-big-titles;
+                font-weight: 200;
+
+                span {
+                    @extend .page-big-titles;
+                }
+            }
+
+            // Header Main section Content Description of Header in Left 
+            p {
+                @extend .page-txt-size;
+                margin-top: 3rem;
+            }
+
+            //Header Main section Content Buttons of Header in Left 
+            .header-main-content-buttons {
+                margin-top: 3.5rem;
+
+                // Header Main section Content Button  
+                button {
+                    @include button;
+                    margin-right: 1.38rem;
+                    transition: 1s;
+
+                    // Header Main section Content First Button 
+                    &:nth-child(1) {
+                        background-color: $color-wht;
+
+                        a {
+                            color: $color-dark-green;
+                        }
+
+                        //  Header Main section Content First Button Hover effect
+                        &:hover {
+                            background-color: transparent;
+
+                            a {
+                                color: $color-wht;
+                            }
+                        }
+                    }
+
+                    // Header Main section Content Second Button 
+                    &:nth-child(2) {
+
+                        //  Header Main section Content First Button Hover effect
+                        &:hover {
+                            background-color: $color-wht;
+
+                            a {
+                                color: $color-dark-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //Header Main Section Image of Header
+        .header-main-image {
+            object-fit: cover;
+
+        }
+    }
+}
+
+// ..........................Main..............//
+
+//.........Assortments Section //
+#assortments {
+    padding-top: 4rem;
+    text-align: center;
+    color: $color-dark-grey;
+
+    // Assortments Header Title
+    .assortments-title {
+        @extend .page-section-titles;
+        padding-bottom: 5rem;
+
+    }
+
+    // Assortments  Items
+    .assortments-item-card {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        button {
+            position: relative;
+            z-index: 2;
+        }
+
+        //Assortments Item  Right  Cards Content  
+        .assortments-right-content {
+            text-align: left;
+            padding: 1.81rem 0px 1.94rem 1.31rem;
+
+            //Assortments Main Item  Right  Cards Title  
+            h4 {
+                @extend .card-plant-tt-size-sm;
+                padding-bottom: 0.5rem;
+
+                span {
+                    font-weight: 700;
+                    @extend .card-plant-tt-size-sm;
+                }
+            }
+
+            //Assortments Main Item  Right  Cards Plants Name 
+            .assortments-right-plants-name {
+
+                li {
+                    @extend .card-plant-txt-size-sm;
+
+                    // Last list oppacity
+                    &:last-child {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            // <!----Assortments Main Item  Right Cards button
+            .assortments-right-button {
+                @include card-button;
+                font: normal 500 0.875rem/1rem'Public Sans', sans-serif;
+                margin-top: 1.75rem;
+            }
+        }
+    }
+
+
+    //Assortments  Items Left Card
+    .assortments-left-card {
+        height: 30.44rem;
+        border-radius: 2.5rem 0px 0px 2.5rem;
+        background-color: rgba(3, 135, 0, 0.3);
+
+        //Assortments Main Item  Left Content 
+        .assortments-left-content {
+            text-align: left;
+            padding: 1.81rem 0px 1.875rem 2.5rem;
+
+            //Assortments Main Item  Title
+            h4 {
+                @extend .card-plant-tt-size;
+                padding-bottom: 1.3rem;
+
+                // Bolt Title     
+                span {
+                    @extend .card-plant-tt-size;
+                    font-weight: 700;
+                }
+            }
+
+            // Assortments Main Item Left Plants Name
+            .assortments-left-plants-name {
+
+                li {
+                    @extend .card-plant-txt-size;
+
+                    // Last list oppacity
+                    &:last-child {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            // Assortments Main Item Left button
+            .assortments-left-button {
+                font: normal 500 1.25rem/1.47rem 'Public Sans', sans-serif;
+                @include card-button;
+                margin-top: 4.875rem;
+            }
+
+        }
+
+        //Assortments Main Items Left Image
+        .assortments-item-image-left {
+            position: absolute;
+            bottom: 0px;
+            right: -12px;
+            height: 35rem;
+        }
+    }
+
+    //Assortments  Items Right First Card
+    .assortments-right-first-card {
+        height: 14.25rem;
+        border-radius: 0px 2.5rem 0px 0px;
+        background-color: rgba(115, 195, 0, 0.35);
+
+        //Assortments Main Item  Image First
+        .assortments-right-image-first {
+            object-fit: cover;
+            position: absolute;
+            right: -3rem;
+            bottom: 1rem;
+            height: 16rem;
+        }
+    }
+
+    //Assortments  Items  Right Second Card
+    .assortments-right-second-card {
+        height: 14.25rem;
+        border-radius: 0px 0px 40px 0px;
+        background-color: rgba(139, 176, 92, 0.35);
+        margin-top: 31px;
+
+        //Assortments Main Item  Image Second
+        .assortments-right-image-second {
+            object-fit: cover;
+            position: absolute;
+            right: 5px;
+            bottom: 3px;
+            height: 13rem;
+        }
+    }
+
+}
+
+//.........Plant Slider Section //
+
+#plantSlider {
+    padding-top: 5rem;
+
+    // Plant section regular Slider properties
+    .slick-slider {
+
+        // PlantSlider reboot buttons
+        .slick-prev:before,
+        .slick-next:before {
+            display: none;
+        }
+
+        //  New buttons of PlantSlider
+        .button-plantSlider::before {
+            color: $color-dark-green;
+            font-size: 3rem;
+
+        }
+
+        // List  cards of PlantSlider 
+        .slick-list {
+            overflow-x: clip;
+            overflow-y: visible;
+
+            // Plant slider section Cards //
+            .slick-slide{
+            .plantSlider-card {
+            
+                height: 19rem;
+                width: 43rem;
+                border-radius: 2.5rem;
+                background-color: $color-somon;
+                position: relative;
+             
+                // plantSlider Cards Images
+                img {
+                    position: absolute;
+                    height: 21rem;
+                    bottom: 5px;
+                    
+    
+                }
+            }
+            .plant-card{
+                display: flex !important;
+                justify-content: center;
+            }
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+}
+
+//..........Important section // 
+#important {
+    color: $color-dark-grey;
+    text-align: center;
+    padding-top: 5.875rem;
+
+    // Important Title // 
+    .important-tt {
+        @extend .page-section-titles;
+    }
+
+    // Important Description // 
+    .important-descrip {
+        margin-top: 2.25rem;
+
+        p {
+            @extend .page-txt-size;
+        }
+
+    }
+
+    // Important Images
+    .important-images {
+        margin-top: 2rem;
+
+        // Important Image
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        // Important Image Right
+        .important-images-rb {
+            margin-top: 1.5rem;
+        }
+    }
+
+}
+
+// ..........Green Image section//
+#green-image {
+    padding-top: 7.44rem;
+
+    // Green Image section content
+    .green-image-content {
+        background: url(../Images/Feelgreen/feelgreenback.png) no-repeat center;
+        height: 39.125rem;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        // Green Image section gradient
+        &:before {
+            content: '';
+            background-color: rgba(0, 128, 128, 0.54);
+            mix-blend-mode: normal;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        // Green image title
+        .green-image-tt {
+
+            @extend .page-big-titles;
+            color: $color-wht;
+            position: relative;
+
+        }
+    }
+}
+
+//............Users section//
+#users {
+    padding-top: 6.5rem;
+    color: $color-dark-grey;
+
+    //Users section title
+    .users-tt {
+        @extend .page-section-titles;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    //Users-cards
+    .user-card {
+
+        height: 16.06rem;
+        padding: 1.5rem 1.625rem 2.3125rem 2.625rem;
+        background-color: $color-somon;
+        border-radius: 40px 40px 0px 40px;
+        position: relative;
+        margin-right: 1.5rem;
+
+        // Users Cards image
+        .user-img {
+            height: 7.1rem;
+            object-fit: cover;
+            position: absolute;
+            top: -2rem;
+            left: -2.5rem;
+        }
+
+        // User card 
+        .user-card-tt {
+            @extend .card-user-tt-size;
+            margin-left: 15%;
+            text-transform: capitalize;
+
+            b {
+                @extend .card-user-tt-size;
+                font-weight: 700;
+            }
+        }
+
+        // Card user impression
+        .user-card-impression {
+            @extend .card-user-txt-size;
+            margin-top: 2.75rem;
+        }
+    }
+
+
+
+}
+
+
+// ..............Footer.......//
+#footer {
+    background-color: $color-dark-green;
+    margin-top: 8.69rem;
+    color: $color-wht;
+
+    // Footer Top
+    .footer-top {
+        text-align: left;
+        padding: 6.93rem 0px 4rem;
+        border-bottom: 1px solid $color-wht;
+
+        // Footer top Logo
+        .footer-logo-top {
+            object-fit: cover;
+            height: 3.875rem;
+
+        }
+
+        // Footer top info number
+        .footer-top-num {
+            font: normal 500 1.25rem/2rem 'Yanone Kaffeesatz', sans-serif;
+            padding: 1.5rem 0px 0.8rem;
+        }
+
+        // Footer top info mail
+        a {
+            font: normal 400 1.2rem/2rem 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        // Footer Top links title (Quick Links) 
+        .footer-top-links-tt {
+            font: normal 500 1.5rem/1.5rem 'Yanone Kaffeesatz', sans-serif;
+            margin-bottom: 2rem;
+        }
+
+        // Footer Top  links
+        .footer-top-links {
+            li {
+                margin-bottom: 2.95rem;
+                font: normal 300 1.3rem/1.2rem 'Yanone Kaffeesatz', sans-serif;
+
+            }
+        }
+
+        // Footer Top  links second
+        .footer-top-links-s {
+            margin-top: 3.5rem;
+        }
+
+        // Footer Top input
+        .footer-top-input {
+
+            // Footer top input label (title)
+            label {
+                font: normal 400 1.5rem/2.8rem 'Yanone Kaffeesatz', sans-serif;
+                margin-bottom: 1.5rem;
+            }
+
+            // Footer top input
+            input {
+                font: normal 400 1.2rem/0.875rem 'Yanone Kaffeesatz', sans-serif;
+                padding: 1.21rem 2rem 1.11rem 0.97rem;
+
+                &:focus {
+                    outline: unset;
+                    border: 1px solid $color-light-grey;
+                }
+            }
+
+            // Footer top input icon
+            i {
+                margin-left: 8px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    // Footer Bottom
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0px;
+
+        // Footer Bottom Social Media
+        .footer-socials {
+            display: flex;
+
+            li {
+                margin-right: 0.5rem;
+
+                // Footer Bottom Social Media Icon
+                i {
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    border: 1px solid rgba(255, 255, 255, 0.589);
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    padding: 0.6rem 0.625rem;
+                }
+
+            }
+        }
+
+        // Footer Bottom Product
+        .footer-bottom-product {
+            span {
+                font: normal 400 1.2rem/1.3rem 'Yanone Kaffeesatz', sans-serif;
+
+            }
+
+            // Footer Logo Bottom
+            .footer-logo-bottom {
+                height: 1.625rem;
+                object-fit: cover;
+            }
+        }
+
+        // Footer Bottom Reserv
+        .footer-bottom-reserv {
+            p {
+                font: normal 400 1.2rem/1.3rem 'Yanone Kaffeesatz', sans-serif;
+
+            }
+
+        }
+    }
+
+
+}

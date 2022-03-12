@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+//...... Common 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0em;
+    font-size: 16px;
+    color: $blue-color;
+}
+
+body {
+    background-color: $pink-color;
+}
+
+// ....Reset 
+li {
+    list-style: none;
+}
+
+// ...............Header.............// 
+#header {
+
+    //....Blue Line in Header
+    .header-color {
+        width: 100%;
+        height: 3rem;
+        background-color: $blue-color;
+        border-bottom: 1px solid $blue-color;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin: 0.5rem 1rem;
+            background-color: $pink-color;
+            position: relative;
+
+            span {
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: $blue-color;
+                margin: 0.5rem;
+            }
+
+        }
+    }
+
+
+}
+
+// 'Open Sans', sans-serif
+// ..............Movies .............// 
+#movies {
+
+    //......Movies title
+    h1 {
+        font: normal 3.5rem/0.44rem 'Syne Mono', monospace;
+        text-align: center;
+    }
+
+    // Movies section Form 
+    .form-movies {
+        display: flex;
+        flex-direction: column;
+
+        // Form input names
+        & label {
+            font: normal 400 1.3rem/1rem 'Open Sans', sans-serif;
+            padding: 1rem;
+        }
+
+        //    Form input border
+        & input {
+            @include inputborder;
+            font-size: 1rem;
+
+        }
+    }
+
+    //Movies form button
+    .form-movies-button {
+        margin-top: 2rem;
+
+        button {
+            background-color: $somon-color;
+            padding: 0.44rem 3rem;
+            font: normal 500 1.1rem/2rem 'Open Sans', sans-serif;
+            border-radius: 1.31rem;
+            border: 3px solid;
+            color: $blue-color;
+
+        }
+    }
+
+
+}
+
+
+// ............List of Movies.........//
+#movies-list {
+    padding-top: 3rem;
+    border-top: 0.25rem dashed #dd7e7167;
+
+    // List of Movies table
+    .movies-list-table {
+        margin: 0 auto;
+
+
+        // List of Movies table titles
+        & thead {
+
+            th {
+                padding: 1.5rem;
+                border-width: 3px;
+                font: normal 600 1.5rem/2.5rem 'Open Sans', sans-serif;
+                border-color: $blue-color;
+            }
+        }
+
+        // List of Movies table body content
+        & tbody {
+
+            th,
+            td {
+                border-width: 2px;
+                padding: 0.625rem;
+                font: normal 600 1rem/1.5rem 'Open Sans', sans-serif;
+            }
+
+            .table-btn {
+                padding: 0.625rem;
+                background-color: $somon-color;
+                padding: 0.56rem;
+                color: $blue-color;
+                border-radius: 1rem;
+                border: 3px solid $blue-color;
+            }
+        }
+
+
+    }
+
+
+
+}

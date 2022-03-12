@@ -1,0 +1,8 @@
+@mixin inputborder{
+ outline: unset;
+ background-color: transparent;
+ width: 80%;
+ padding: 0.56rem;
+border-radius: 1rem;
+border: 3px solid $blue-color;
+}

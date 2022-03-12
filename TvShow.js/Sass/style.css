@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+.table-border {
+  border: 3px solid #1F2D55;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0em;
+  font-size: 16px;
+  color: #1F2D55;
+}
+
+body {
+  background-color: #E9CEC2;
+}
+
+li {
+  list-style: none;
+}
+
+#header .header-color {
+  width: 100%;
+  height: 3rem;
+  background-color: #1F2D55;
+  border-bottom: 1px solid #1F2D55;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .header-color li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0.5rem 1rem;
+  background-color: #E9CEC2;
+  position: relative;
+}
+
+#header .header-color li span {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #1F2D55;
+  margin: 0.5rem;
+}
+
+#movies h1 {
+  font: normal 3.5rem/0.44rem 'Syne Mono', monospace;
+  text-align: center;
+}
+
+#movies .form-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#movies .form-movies label {
+  font: normal 400 1.3rem/1rem 'Open Sans', sans-serif;
+  padding: 1rem;
+}
+
+#movies .form-movies input {
+  outline: unset;
+  background-color: transparent;
+  width: 80%;
+  padding: 0.56rem;
+  border-radius: 1rem;
+  border: 3px solid #1F2D55;
+  font-size: 1rem;
+}
+
+#movies .form-movies-button {
+  margin-top: 2rem;
+}
+
+#movies .form-movies-button button {
+  background-color: #E98073;
+  padding: 0.44rem 3rem;
+  font: normal 500 1.1rem/2rem 'Open Sans', sans-serif;
+  border-radius: 1.31rem;
+  border: 3px solid;
+  color: #1F2D55;
+}
+
+#movies-list {
+  padding-top: 3rem;
+  border-top: 0.25rem dashed #dd7e7167;
+}
+
+#movies-list .movies-list-table {
+  margin: 0 auto;
+}
+
+#movies-list .movies-list-table thead th {
+  padding: 1.5rem;
+  border-width: 3px;
+  font: normal 600 1.5rem/2.5rem 'Open Sans', sans-serif;
+  border-color: #1F2D55;
+}
+
+#movies-list .movies-list-table tbody th,
+#movies-list .movies-list-table tbody td {
+  border-width: 2px;
+  padding: 0.625rem;
+  font: normal 600 1rem/1.5rem 'Open Sans', sans-serif;
+}
+
+#movies-list .movies-list-table tbody .table-btn {
+  padding: 0.625rem;
+  background-color: #E98073;
+  padding: 0.56rem;
+  color: #1F2D55;
+  border-radius: 1rem;
+  border: 3px solid #1F2D55;
+}
+/*# sourceMappingURL=style.css.map */
